@@ -1,0 +1,109 @@
+body{
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  transition: .5;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 2);
+  height: 170px;
+  padding: 10px;
+}
+
+.form {
+  background-color: #eee;
+  width: -moz-available;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.form .input {
+  width: calc(85%);
+  margin-right: calc(3%);
+  height: 30px;
+  border: solid 1px rgba(0, 0, 0, 0.168);
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.form .add {
+  width: calc(13%);
+  height: 30px;
+  background-color: #f64237;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.container .tasks {
+  width: -moz-available;
+  height: fit-content;
+  background-color: #eee;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+}
+
+.tasks .task {
+  background-color: #fff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.265);
+}
+
+.tasks .task p {
+  font-size: 25px;
+}
+
+.tasks .task:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.task button {
+  background-color: #fc0204;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  width: 50px;
+  cursor: pointer;
+} 
+
+
+.done {
+  opacity: .2;
+}
+
+.all {
+  width: calc(13%);
+  background-color: #f64237;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bolder;
+  cursor: pointer;
+  margin-top: 30px;
+}
