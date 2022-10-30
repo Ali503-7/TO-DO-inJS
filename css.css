@@ -18,6 +18,7 @@ body{
 
 .form {
   background-color: #eee;
+  width: -webkit-fill-available;
   width: -moz-available;
   display: flex;
   align-items: center;
@@ -51,6 +52,7 @@ body{
 }
 
 .container .tasks {
+  width: -webkit-fill-available;
   width: -moz-available;
   height: fit-content;
   background-color: #eee;
